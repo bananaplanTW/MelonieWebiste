@@ -17,6 +17,15 @@
         var bodyClass = body.className + " no-scroll";
         body.setAttribute('class', bodyClass);
     });
+
+    var cancelButton = document.getElementById("cancel");
+    cancelButton.addEventListener('click', function (e) {
+        var body = document.getElementsByTagName("body")[0];
+        var bodyClass = body.className.replace(" no-scroll", "");
+
+        applicationPopupContainer.style.display = "none";
+        body.setAttribute('class', bodyClass); 
+    });
 /*
     //binding signup button click event
     signup.addEventListener('click', function (e) {

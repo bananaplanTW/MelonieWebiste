@@ -19,13 +19,13 @@
     <div class="submit-area">
       <button id="upload-application-form-button" class="submit-button">馬上申請！</button>
     </div>
-    <!--div class="main-container">
+    <div class="main-container">
       <div class="center-rail">
         <div class="discover-headline">
-          <h2></h2>
+          <h2>網站建製中</h2>
         </div>
       </div>
-    </div-->
+    </div>
     <!--div class="footer">
       <div class="copy-right-container">
         <p class="copy-right">Copy rights reserve by Bananaplan</p>
