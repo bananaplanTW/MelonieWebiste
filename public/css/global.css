@@ -45,20 +45,6 @@ label {
   font-size: 14px;
 }
 
-label:before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 1px;
-  background-color: #fafafa;
-  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 0px 0px rgba(255, 255, 255, 0.8);
-
-}
-
 input[type=checkbox] {
   display: none;
 }
@@ -79,7 +65,7 @@ input[type=checkbox]:checked + label:before {
 .logo p{
   font-size: 30px;
   line-height: 30px;
-  color: #ff5a5f;
+  color: #3498db;
 }
 
 .footer {
@@ -261,4 +247,8 @@ input[type=checkbox]:checked + label:before {
 height: 1px;
 border: 1px solid #000000;
 margin-top: 10px;
+}
+
+.red {
+  color: red;
 }

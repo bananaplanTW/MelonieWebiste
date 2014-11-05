@@ -1,5 +1,5 @@
 <div id="top-banner" class="top-banner fixed-top-banner">
-  <a href="/" class="logo"><p>Running Area</p></a>
+  <a href="/" class="logo"><p>Apply UK Online</p></a>
   {?data.user}
   <ul id="user" class="push-to-right user">
   {:else}
@@ -12,26 +12,6 @@
     </li>
     <li id="logout" class="runup-green-box clickable logout">
         Logout
-    </li>
-  </ul>
-
-  {?data.user}
-  <ul id="auth" class="push-to-right auth display-none">
-  {:else}
-  <ul id="auth" class="push-to-right auth">
-  {/data.user}
-    <li id="signup" class="runup-green-box clickable signup">
-        Sign up
-    </li>
-    <li id="login" class="runup-green-box clickable login">
-        Login
-    </li>
-  </ul>
-
-  <ul class="push-to-right">
-    <li class="runup-red-box post spread-link-container clickable">
-      <a class="spread-link" href="/post"></a>
-      Post Your Group
     </li>
   </ul>
 </div>

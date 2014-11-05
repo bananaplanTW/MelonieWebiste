@@ -5,7 +5,7 @@ var util = require('util'),
     queryString = "SELECT a.state_short, a.state_origin, b.country_short FROM state AS a, country AS b WHERE a.under_country_id = b.id";
 
 router.get('/', function (req, res) {
-    ModuleMysql.execute(queryString, function (error, rows) {
+    /*ModuleMysql.execute(queryString, function (error, rows) {
 		if (error) {
 			console.log(error);
 			res.render('error');
@@ -18,7 +18,8 @@ router.get('/', function (req, res) {
 		data.states = rows;
 		data.user = req.user;
 		res.render('home', {data : data});
-	});
+	});*/
+	res.render('home');
 });
 
 module.exports = router;
