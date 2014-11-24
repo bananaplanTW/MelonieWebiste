@@ -1,3 +1,54 @@
+/*-- common used css styles for layouts --*/
+
+* {
+  box-sizing: border-box;
+}
+.col-8 {
+  position: relative;
+  float: left;
+  width: 66.66667%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.col-4 {
+  position: relative;
+  float: left;
+  width: 33.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.col-half {
+  position: relative;
+  float: left;
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.col-all {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.push-to-back {
+  z-index: -1;
+}
+
 .description-item {
   padding: 10px 10px 0px 10px;
 }
@@ -58,5 +109,35 @@
   clear: both;
   content: "";
   display: table;
+}
 
+.push-to-right{
+  float: right;
+  padding: 0px;
+  margin: 0px 10px 0px 10px;
+}
+
+.runup-red-box {
+  background-color: #ff5a5f;
+  padding: 10px 15px 10px 15px;
+}
+
+.runup-green-box {
+  background-color: rgb(38, 214, 170);
+  padding: 10px 15px 10px 15px;
+}
+
+.runup-red-box a {
+  color: white;
+}
+
+.hover-dark {
+  opacity: 0.9;
+}
+
+.hover-dark:hover {
+  opacity: 0.8;
+  transition: opacity ease-in-out 0.2s;
+  -webkit-transition: opacity ease-in-out 0.2s;
+  -moz-transition: opacity ease-in-out 0.2s;
 }

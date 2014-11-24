@@ -2,7 +2,9 @@
   <head>
     <link rel="stylesheet" type="text/css" href="/css/global.css">
     <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/css/search.css">
     <link rel="stylesheet" type="text/css" href="/css/basic.css">
+    <link rel="stylesheet" type="text/css" href="/css/signup_login.css">
     <link rel="stylesheet" type="text/css" href="/css/application-form.css">
     <link rel="stylesheet" type="text/css" href="/css/common.css">
     <link href="/css/structure.css" rel="stylesheet">
@@ -22,15 +24,14 @@
     <div class="main-container">
       <div class="center-rail">
         <div class="discover-headline">
-          <h2>網站建製中</h2>
+          <form action="/search" method="GET">
+              <input name="q" class="input-box" type="text" placeholder="Find School"/>
+              <input class="submit-button" type="submit" value="Search"/>
+            </form>
         </div>
       </div>
     </div>
-    <!--div class="footer">
-      <div class="copy-right-container">
-        <p class="copy-right">Copy rights reserve by Bananaplan</p>
-      </div>
-    </div-->
+    {>"templates/footer"/}
     {>"templates/application-form"/}
   </body>
   <script type="text/javascript" src="/js/wufoo.js"></script>

@@ -5,21 +5,9 @@ var util = require('util'),
     queryString = "SELECT a.state_short, a.state_origin, b.country_short FROM state AS a, country AS b WHERE a.under_country_id = b.id";
 
 router.get('/', function (req, res) {
-    /*ModuleMysql.execute(queryString, function (error, rows) {
-		if (error) {
-			console.log(error);
-			res.render('error');
-			return;
-		}
-		for (var i = 0; i < rows.length; i ++) {
-			rows[i].state_origin = unescape(rows[i].state_origin);
-		}
-		var data = {};
-		data.states = rows;
-		data.user = req.user;
-		res.render('home', {data : data});
-	});*/
-	res.render('home');
+	var data = {};
+	data.schools = [1,2,3,4,5,6,7,8];
+	res.render('home', {data: data});
 });
 
 module.exports = router;

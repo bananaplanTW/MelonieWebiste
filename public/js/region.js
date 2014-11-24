@@ -1,30 +1,30 @@
 var bounds;
 var infowindows = [];
 function setIconOnMap (map) {
-	var groupCards = document.getElementsByClassName('group-card');
-	var groupName;
+	var schoolCards = document.getElementsByClassName('school-card');
+	var schoolName;
 	var marker, lat, lng, latlng;
 	bounds = new google.maps.LatLngBounds();
-	for (var i = 0; i < groupCards.length; i ++ ){
-		groupName = groupCards[i].querySelector("#group-name").innerHTML;
-		lat = parseFloat(groupCards[i].getAttribute('data-lat'));
-		lng = parseFloat(groupCards[i].getAttribute('data-lng'));
-		putIconOnMap(map, lat, lng, groupName, groupCards[i]);
+	for (var i = 0; i < schoolCards.length; i ++ ){
+		schoolName = schoolCards[i].querySelector("#school-name").innerHTML;
+		lat = parseFloat(schoolCards[i].getAttribute('data-lat'));
+		lng = parseFloat(schoolCards[i].getAttribute('data-lng'));
+		putIconOnMap(map, lat, lng, schoolName, schoolCards[i]);
 	}
 	map.fitBounds(bounds);
 };
 
-function putIconOnMap(map, lat, lng, groupName, groupCard) {
+function putIconOnMap(map, lat, lng, schoolName, schoolCard) {
 	var latlng = new google.maps.LatLng(lat, lng);
 	var marker = new google.maps.Marker({
 				    position: latlng,
-				    title:groupName
+				    title:schoolName
 				});
 	bounds.extend(latlng);
 	marker.setMap(map);
 
 	var infowindow = new google.maps.InfoWindow({
-	    content: groupCard.innerHTML
+	    content: schoolCard.innerHTML
 	});
 	infowindows.push(infowindow);
 	var isOpen = false;
@@ -40,14 +40,14 @@ function putIconOnMap(map, lat, lng, groupName, groupCard) {
 	});
 	
 
-	groupCard.addEventListener('mouseover', function () {
+	schoolCard.addEventListener('mouseover', function () {
 	  /*for (var i = 0; i < infowindows.length; i ++) {
 	  	infowindows[i].close();
 	  }
 	  infowindow.open(map,marker);*/
 	  setAnimationBounce(marker);
 	});
-	groupCard.addEventListener('mouseout', function () {
+	schoolCard.addEventListener('mouseout', function () {
 	  //infowindow.close();
 	  removeAnimation(marker);
 	});
