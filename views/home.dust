@@ -13,13 +13,13 @@
   <body>
     {>"templates/top-banner"/}
     <div class="teaser">
-      <img src="/assets/images/cover.jpg">
+      <img src="/assets/images/cover.jpeg">
     </div>
     <div class="latest-news">
       <span class="latest-news-description">試營運，免費申請</span>
     </div>
     <div class="submit-area">
-      <button id="upload-application-form-button" class="submit-button">馬上申請！</button>
+      <button id="upload-application-form-button" class="home-submit-button">馬上申請！</button>
     </div>
     <div class="main-container">
       <div class="center-rail">

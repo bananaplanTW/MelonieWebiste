@@ -84,8 +84,8 @@ td {
 
 .footer {
   margin-top: 50px;
-  height: 200px;
-  background-color: #ff5a5f;
+  height: 80px;
+  background-color: #3498db;
 }
 
 .login, .signup, .logout, .post {
