@@ -14,10 +14,17 @@ var mongoose = require('mongoose'),
 		cover: String,
 		logo: String,
 		briefing: String,
+		rank: Number,
+		mainCategory: [Number],
+		subCategory: [Number],
 		ranking: [schoolRankingSchema],
 		introduction: String,
 		departments: [departmentSchema],
 		photos: [String]
+	}),
+	categorySchema = new Schema({
+		id: Number,
+		name: String
 	});
 
 mongoose.connect("mongodb://localhost/melanie");
@@ -32,8 +39,12 @@ db.on('open', function () {
 
 // define School collection
 var School = mongoose.model("School", schoolSchema);
+var MainCategory = mongoose.model("MainCategory", categorySchema);
+var SubCategory  = mongoose.model("SubCategory", categorySchema);
 
 module.exports = {
 	School : School,
+	MainCategory: MainCategory,
+	SubCategory: SubCategory,
 	SchoolAgencyDB: db
 };

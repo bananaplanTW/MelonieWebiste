@@ -23,15 +23,44 @@
     </div>
     <div class="main-container">
       <div class="center-rail">
-        <div class="row discover-headline">
+        <!--div class="row discover-headline">
           <form action="/search" method="GET">
             <input name="q" class="input-box" type="text" placeholder="Find School"/>
             <input class="submit-button" type="submit" value="Search"/>
           </form>
-        </div>
+        </div-->
         <div class="row">
           <div class="col-1-4">
-            sadf
+            <div class="category-card category-red clickable spread-link-container">
+              <a class="spread-link" href="search"></a>
+              <div class="discover-title">
+                <p class="title">學校搜尋</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-4">
+            <div class="category-card category-brown  spread-link-container">
+              <!--a class="spread-link" href=""></a-->
+              <div class="discover-title">
+                <p class="title">文件編修</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-4">
+            <div class="category-card category-red  spread-link-container">
+              <!--a class="spread-link" href=""></a-->
+              <div class="discover-title">
+                <p class="title">熱門ＱＡ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-4">
+            <div class="category-card category-brown  spread-link-container">
+              <!--a class="spread-link" href=""></a-->
+              <div class="discover-title">
+                <p class="title">成功申請案例</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
