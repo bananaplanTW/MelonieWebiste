@@ -23,11 +23,16 @@
     </div>
     <div class="main-container">
       <div class="center-rail">
-        <div class="discover-headline">
+        <div class="row discover-headline">
           <form action="/search" method="GET">
-              <input name="q" class="input-box" type="text" placeholder="Find School"/>
-              <input class="submit-button" type="submit" value="Search"/>
-            </form>
+            <input name="q" class="input-box" type="text" placeholder="Find School"/>
+            <input class="submit-button" type="submit" value="Search"/>
+          </form>
+        </div>
+        <div class="row">
+          <div class="col-1-4">
+            sadf
+          </div>
         </div>
       </div>
     </div>
